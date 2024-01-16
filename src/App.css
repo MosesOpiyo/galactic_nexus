@@ -1,38 +1,28 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: 'Audiowide';
+  src: url('../public/assets/Fonts/Audiowide-Regular.ttf') format('truetype'); /* Adjust the path accordingly */
+  font-weight: normal;
+  font-style: normal;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: 'Audiowide';
+  src: url('../public/assets/Fonts/Audiowide-Regular.ttf') format('truetype'); /* Adjust the path accordingly */
+  font-weight: bold;
+  font-style: normal;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.Container {
+  width: 100%; /* Default width for smaller screens */
+  background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.eveonline.com%2Fnews%2Fview%2Falpha-ship-spotlight-brutix&psig=AOvVaw2kVYg0k3AAMQCK-E6L0Lrr&ust=1705258861211000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCIDi6bmG24MDFQAAAAAdAAAAABAH');
+  background-position: center;
+  background-size: cover;
+
+  @media (min-width: 768px) {
+    width: 50%; /* Adjust as needed for larger screens */
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+  @media (min-width: 1024px) {
+    width: 30%; /* Adjust as needed for even larger screens */
   }
 }

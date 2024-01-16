@@ -1,0 +1,31 @@
+h1,
+p {
+  opacity: 0; /* Initially set opacity to 0 */
+}
+
+.scroll-in-top {
+  animation: scrollInTop 1s ease-out forwards;
+}
+
+.scroll-in-side {
+  animation: scrollInSide 1s ease-out forwards;
+}
+
+.scrolled h1,
+.scrolled p {
+  opacity: 1;
+}
+
+@keyframes scrollInTop {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scrollInSide {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

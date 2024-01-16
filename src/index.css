@@ -1,13 +1,37 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+section{
+  background-color: black;
+}
+.navbar {
+  transition: background-color 0.3s ease-in-out;
+  position: fixed;
+}
+.home {
+  background-color: black;
+  width: 100%;
+  height: auto;
+  
+}
+.banner-info{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url(../public/assets/img/5ca0fc6ecf034cedde6aa80b811dcfd3.gif);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.info{
+  margin-top: 8pc;
+}
+.banner-info-2{
+  background-color: black;
+  width: 100%;
+  height: auto;
+}
+.banner-image{
+  background-image: linear-gradient(to right,black,rgba(0, 0, 0, 0.2)) , url(../public/assets/img/Gear-EVE-Online-COVID.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height:600px
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+
